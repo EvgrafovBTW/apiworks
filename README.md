@@ -7,4 +7,4 @@
 ## Как запустить 
 Необходимо войти через коносль в папку с приложением и запустить Metro Bundler с помощью команды **expo start**
 
-![image](C:/Users/bleed/Desktop/Git repos/expostart.png)
+![image](C:/Users/bleed/Desktop/Git_repos/expostart.PNG)
