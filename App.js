@@ -35,6 +35,7 @@ export default function App() {
     signIn();
     setName('');
     setPswd('');
+    alert("asd");
   }
 
   global.login = name;
@@ -48,11 +49,11 @@ export default function App() {
           <TextInput style = {styles.txtBox} placeholder='Введите пароль' value={pswd} secureTextEntry={true} onChangeText={(value) => setPswd(value)}></TextInput>
 
           <View style={styles.btnBlock}>
-            <TouchableOpacity style={styles.confirmBtn} onPress={onRegPress}>
-              <Text style={styles.confirmBtnTxt}>привет, {login}! В шарарам?</Text> 
+            <TouchableOpacity style={styles.confirmBtn} onPress={onSignPress}>
+              <Text style={styles.confirmBtnTxt}>Вход</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.confirmBtn}>
-              <Text style={styles.confirmBtnTxt} onPress={onSignPress}>Я уже смешарик!</Text>
+            <TouchableOpacity style={styles.confirmBtn} onPress={onRegPress}>
+              <Text style={styles.confirmBtnTxt}>Регистрация</Text> 
             </TouchableOpacity>
           </View>
         </View>
@@ -80,8 +81,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     paddingVertical: 5,
     borderRadius: 30,
-    flex: 1,
-    justifyContent: 'space-evenly'
+    alignItems: 'center'
 
   },
   confirmBtnTxt:{
@@ -93,9 +93,12 @@ const styles = StyleSheet.create({
     flex: 2,
     flexDirection: 'column',
     height: 100,
+    marginLeft: 10,
+    marginRight: 10,
   },
   menu: {
     height: 200,
+    marginTop: 100,
   },
   
 });
